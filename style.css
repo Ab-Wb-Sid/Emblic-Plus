@@ -1,4 +1,32 @@
-* {
-    padding: 0;
-    margin: 0;
+:root {
+  --color-forest: #104833;
+  --color-forest-dark: #0B3828;
+  --color-gold: #A47A22;
+  --color-ivory: #FAF6EC;
+  --color-sage: #E9EBDD;
+  --color-sand: #D8C4A1;
+  --color-text: #334D40;
+  --color-white: #FFFFFF;
+
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "Outfit", sans-serif;
+
+  --page-width: 1120px;
+  --section-padding: 80px;
+  --border-soft: 1px solid #E8E0D1;
+  --shadow-soft: 0 8px 28px rgba(30, 50, 35, 0.08);
 }
+
+* , *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); color: var(--text); background: var(--cream); line-height: 1.6; }
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+

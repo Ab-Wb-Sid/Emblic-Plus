@@ -16,40 +16,29 @@
 <body>
   <!-- Sections -->
   <header class="header">
-    <div class="container header__inner">
-      <a href="#home" class="logo" aria-label="Emblic Plus home">
-        <span class="logo__name">Emblic</span>
-        <span class="logo__plus">plus</span>
-      </a>
+  <div class="container header__inner">
+    <a href="#home" class="logo">
+      <span class="logo__name">Emblic</span>
+      <span class="logo__plus">plus</span>
+    </a>
 
-      <nav class="nav" id="mainNav">
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <nav class="nav" id="nav">
+      <ul class="nav__links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#ingredients">Ingredients</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </nav>
 
-      <div class="header__icons">
-        <button id="searchBtn" type="button"
-          aria-label="Open search" aria-expanded="false"
-          aria-controls="siteSearch">Search</button>
-
-        <button id="cartBtn" class="cart-btn" type="button"
-          aria-label="Shopping cart, 0 items" data-count="0">Bag</button>
-
-        <button id="burgerBtn" class="burger" type="button"
-          aria-label="Open navigation" aria-expanded="false">Menu</button>
-      </div>
+    <div class="header__icons">
+      <button id="searchBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button id="cartBtn" class="cart-btn" aria-label="Cart" data-count="0"><i class="fa-solid fa-bag-shopping"></i></button>
+      <button id="burgerBtn" class="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
     </div>
-
-    <form id="siteSearch" class="site-search" role="search" hidden>
-      <label for="siteSearchInput">Search products</label>
-      <input id="siteSearchInput" type="search"
-        placeholder="Search oils, shampoo..." autocomplete="off">
-      <button type="submit">Search</button>
-      <button id="closeSearch" type="button" aria-label="Close search">Close</button>
-      <p id="siteSearchStatus" role="status" aria-live="polite"></p>
-    </form>
-  </header>
+  </div>
+</header>
 
   <main>
     <section id="home" class="hero">

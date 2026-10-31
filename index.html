@@ -1,218 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover Emblic Plus hair care, nourishing oils and shampoos.">
-  <title>Emblic Plus | Hair Care, Oil & Shampoo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emblic Plus | Pure Hair Oil</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- Sections -->
+
+  <!-- ========== 1. HEADER ========== -->
   <header class="header">
-  <div class="container header__inner">
-    <a href="#home" class="logo">
-      <span class="logo__name">Emblic</span>
-      <span class="logo__plus">plus</span>
-    </a>
+    <div class="container header__inner">
+      <a href="#home" class="logo">
+        <span class="logo__name">Emblic</span>
+        <span class="logo__plus">plus</span>
+      </a>
 
-    <nav class="nav" id="nav">
-      <ul class="nav__links">
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#benefits">Benefits</a></li>
-        <li><a href="#ingredients">Ingredients</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-      </ul>
-    </nav>
+      <nav class="nav" id="nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#ingredients">Ingredients</a>
+        <a href="#reviews">Reviews</a>
+      </nav>
 
-    <div class="header__icons">
-      <button id="searchBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
-      <button id="cartBtn" class="cart-btn" aria-label="Cart" data-count="0"><i class="fa-solid fa-bag-shopping"></i></button>
-      <button id="burgerBtn" class="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+      <div class="header__icons">
+        <button id="searchBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button id="cartBtn" class="cart-btn" aria-label="Cart" data-count="0"><i class="fa-solid fa-bag-shopping"></i></button>
+        <button id="burgerBtn" class="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-  <main>
-    <section id="home" class="hero">
+  <!-- ========== 2. HERO ========== -->
+  <section class="hero" id="home">
+    <div class="container hero__inner">
       <div class="hero__content">
-        <p class="eyebrow">Nature-inspired hair care</p>
-        <h1>Let Your Hair<br>Tell Its <em>Story.</em></h1>
-        <p class="hero__description">
-          Discover a thoughtful hair care ritual with nourishing oils
-          and shampoos made for your everyday routine.
+        <p class="eyebrow">Pure Care <span>•</span> Stronger Hair <span>•</span> Naturally</p>
+        <h1>Nature's Goodness<br />for Healthier,<br /><em>Stronger Hair</em></h1>
+        <p class="hero__text">
+          Emblic Plus Hair Oil is a pure blend of natural oils and extracts that nourish your scalp,
+          strengthen roots and promote healthy, shiny hair.
         </p>
-        <a class="button button--primary" href="#products">
-          Explore our collection
-        </a>
-        <p class="hero__note">
-          A little care, a more confident you.
-        </p>
-      </div>
 
-      <div class="hero__visual" role="img"
-        aria-label="Decorative botanical hair care illustration">
-        <div class="hero__circle"></div>
-        <div class="hero__plant plant plant--one"></div>
-        <div class="hero__plant plant plant--two"></div>
-        <div class="hero__product">
-          <span class="product__brand">EMBLIC</span>
-          <span class="product__name">Hair Oil</span>
-          <span class="product__detail">NOURISHING CARE</span>
+        <div class="hero__features">
+          <div class="hero__feature"><span class="icon-circle"><i class="fa-solid fa-seedling"></i></span>Nourishes<br />Scalp</div>
+          <div class="hero__feature"><span class="icon-circle"><i class="fa-solid fa-droplet"></i></span>Strengthens<br />Hair</div>
+          <div class="hero__feature"><span class="icon-circle"><i class="fa-solid fa-leaf"></i></span>Promotes<br />Hair Growth</div>
         </div>
-        <span class="hero__caption">Rooted in nature</span>
-      </div>
-    </section>
 
-    <section id="about" class="about section">
-      <div class="section__heading">
-        <p class="eyebrow">The Emblic philosophy</p>
-        <h2>Care that feels <em>natural.</em></h2>
+        <a href="#ingredients" class="btn">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="badge"><i class="fa-solid fa-leaf"></i><span>100% Pure<br />&amp; Natural</span></div>
+    </div>
+  </section>
+
+  <!-- ========== 3. ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="container about__grid">
+      <div class="about__img">
+        <img src="images/about-hair.jpg" alt="Woman with long healthy dark hair" />
+      </div>
+
+      <div class="about__content">
+        <p class="eyebrow">About Emblic Plus</p>
+        <h2 class="section-title">Pure Ingredients.<br />Real Results.</h2>
         <p>
-          Your hair care routine deserves attention. Emblic Plus
-          brings oils and shampoos together in a simple daily ritual.
+          Emblic Plus Hair Oil is crafted with carefully selected natural ingredients, combining the
+          goodness of amla and powerful botanical oils to give your hair the nourishment it truly deserves.
         </p>
+        <a href="#benefits" class="btn btn-sm">Learn More <i class="fa-solid fa-arrow-right"></i></a>
       </div>
 
-      <div class="features">
-        <article class="feature">
-          <h3>Inspired by Nature</h3>
-          <p>Discover a collection inspired by everyday hair care rituals.</p>
+      <div class="about__points">
+        <div class="point">
+          <span class="icon-circle"><i class="fa-solid fa-leaf"></i></span>
+          <div><h4>100% Natural</h4><p>No harmful chemicals</p></div>
+        </div>
+        <div class="point">
+          <span class="icon-circle"><i class="fa-solid fa-droplet"></i></span>
+          <div><h4>Gentle on Scalp</h4><p>Safe for daily use</p></div>
+        </div>
+        <div class="point">
+          <span class="icon-circle"><i class="fa-solid fa-wind"></i></span>
+          <div><h4>Suitable for All Hair Types</h4><p>Straight, wavy or curly</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. BENEFITS ========== -->
+  <section class="benefits" id="benefits">
+    <div class="container benefits__inner">
+      <div class="benefits__content">
+        <p class="eyebrow">Key Benefits</p>
+        <h2 class="section-title">Healthier Hair<br />from Root to Tip</h2>
+        <p class="benefits__lead">Discover the natural power of Emblic Plus and experience stronger, shinier and healthier hair.</p>
+
+        <div class="checklist">
+          <span><i class="fa-solid fa-circle-check"></i>Reduces hair fall</span>
+          <span><i class="fa-solid fa-circle-check"></i>Adds natural shine</span>
+          <span><i class="fa-solid fa-circle-check"></i>Strengthens hair roots</span>
+          <span><i class="fa-solid fa-circle-check"></i>Prevents breakage</span>
+          <span><i class="fa-solid fa-circle-check"></i>Improves scalp health</span>
+          <span><i class="fa-solid fa-circle-check"></i>Supports new hair growth</span>
+        </div>
+      </div>
+
+      <p class="benefits__note">Pure oils.<br />Pure care.</p>
+    </div>
+  </section>
+
+  <!-- ========== 5. INGREDIENTS ========== -->
+  <section class="ingredients" id="ingredients">
+    <div class="container ingredients__grid">
+      <div class="ingredients__intro">
+        <p class="eyebrow">Natural Ingredients</p>
+        <h2 class="section-title">The Power of Nature</h2>
+        <p>A unique blend of traditional herbs and natural oils known for their hair health benefits.</p>
+        <a href="#" class="btn btn-sm">Explore Ingredients <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="ingredients__list">
+        <article class="ingredient">
+          <img src="images/amla.jpg" alt="Amla" />
+          <h4>Amla Extract</h4>
+          <p>Rich in Vitamin C, boosts collagen &amp; strengthens hair.</p>
         </article>
-        <article class="feature">
-          <h3>Everyday Nourishment</h3>
-          <p>Find products to make your hair care routine feel special.</p>
+        <article class="ingredient">
+          <img src="images/bhringraj.jpg" alt="Bhringraj" />
+          <h4>Bhringraj</h4>
+          <p>Stimulates hair growth &amp; reduces hair fall.</p>
         </article>
-        <article class="feature">
-          <h3>Care Made Simple</h3>
-          <p>Build a routine that fits your lifestyle and your needs.</p>
+        <article class="ingredient">
+          <img src="images/coconut.jpg" alt="Coconut" />
+          <h4>Coconut Oil</h4>
+          <p>Deeply nourishes &amp; adds natural shine.</p>
+        </article>
+        <article class="ingredient">
+          <img src="images/sesame.jpg" alt="Sesame seeds" />
+          <h4>Sesame Oil</h4>
+          <p>Rich in nutrients, prevents breakage.</p>
         </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="products" class="products section">
-      <div class="products__heading">
+  <!-- ========== 6. REVIEWS ========== -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="reviews__head">
         <div>
-          <p class="eyebrow">Your daily essentials</p>
-          <h2>Discover the <em>collection.</em></h2>
+          <p class="eyebrow">What Our Customers Say</p>
+          <h2 class="section-title">Real People. Real Results.</h2>
         </div>
-        <p>Find your next hair care favourite.</p>
-      </div>
-
-      <div class="product-grid">
-        <article class="product-card" data-product="oil">
-          <div class="product-card__visual product-card__visual--oil">
-            <span>01</span>
-          </div>
-          <div class="product-card__info">
-            <p class="product-card__type">HAIR CARE</p>
-            <h3>Emblic Hair Oil</h3>
-            <p>A nourishing step in your hair care ritual.</p>
-            <div class="product-card__bottom">
-              <span>PKR 850</span>
-              <button class="add-to-cart" type="button"
-                data-name="Emblic Hair Oil" data-price="850">
-                Add to bag
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card" data-product="shampoo">
-          <div class="product-card__visual product-card__visual--shampoo">
-            <span>02</span>
-          </div>
-          <div class="product-card__info">
-            <p class="product-card__type">DAILY CLEANSING</p>
-            <h3>Emblic Shampoo</h3>
-            <p>A fresh start for your everyday hair routine.</p>
-            <div class="product-card__bottom">
-              <span>PKR 650</span>
-              <button class="add-to-cart" type="button"
-                data-name="Emblic Shampoo" data-price="650">
-                Add to bag
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card" data-product="combo">
-          <div class="product-card__visual product-card__visual--combo">
-            <span>03</span>
-          </div>
-          <div class="product-card__info">
-            <p class="product-card__type">HAIR CARE SET</p>
-            <h3>Care Duo</h3>
-            <p>Pair your hair oil and shampoo in one routine.</p>
-            <div class="product-card__bottom">
-              <span>PKR 1,400</span>
-              <button class="add-to-cart" type="button"
-                data-name="Care Duo" data-price="1400">
-                Add to bag
-              </button>
-            </div>
-          </div>
-        </article>
-      </div>
-      <p id="cartStatus" class="status-message"
-        role="status" aria-live="polite"></p>
-    </section>
-
-    <section id="contact" class="contact section">
-      <div class="contact__inner">
-        <div class="contact__intro">
-          <p class="eyebrow">We're here to help</p>
-          <h2>Let's start a <em>conversation.</em></h2>
-          <p>
-            Have a question about our products or your order?
-            Send us a message.
-          </p>
+        <div class="reviews__arrows">
+          <button id="prevReview" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+          <button id="nextReview" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
-
-        <form id="contactForm" class="contact__form">
-          <div class="contact__field">
-            <label for="contactName">Name</label>
-            <input id="contactName" name="name" type="text"
-              autocomplete="name" placeholder="Your full name" required>
-          </div>
-
-          <div class="contact__field">
-            <label for="contactEmail">Email</label>
-            <input id="contactEmail" name="email" type="email"
-              autocomplete="email" placeholder="you@example.com" required>
-          </div>
-
-          <div class="contact__field">
-            <label for="contactMessage">Message</label>
-            <textarea id="contactMessage" name="message" rows="5"
-              placeholder="How can we help?" required></textarea>
-          </div>
-
-          <button class="button button--primary" type="submit">
-            Send message
-          </button>
-          <p id="contactStatus" role="status" aria-live="polite"></p>
-        </form>
       </div>
-    </section>
-  </main>
 
+      <div class="reviews__track">
+        <article class="review">
+          <img src="images/user-1.jpg" alt="Ayesha Khan" class="review__avatar" />
+          <div class="review__body">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>"My hair fall has reduced a lot and my hair feels much stronger now. Highly recommend!"</p>
+            <h5>Ayesha Khan</h5><span>Karachi</span>
+          </div>
+        </article>
+
+        <article class="review">
+          <img src="images/user-2.jpg" alt="Sara Ahmed" class="review__avatar" />
+          <div class="review__body">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>"This oil has made my hair so much softer and shinier. I love the natural fragrance too!"</p>
+            <h5>Sara Ahmed</h5><span>Lahore</span>
+          </div>
+        </article>
+
+        <article class="review">
+          <img src="images/user-3.jpg" alt="Fatima Rizvi" class="review__avatar" />
+          <div class="review__body">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>"Finally a hair oil that actually works! My scalp feels healthier and my hair grows faster."</p>
+            <h5>Fatima Rizvi</h5><span>Islamabad</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 7. CTA BANNER ========== -->
+  <section class="cta">
+    <div class="container cta__inner">
+      <div class="cta__text">
+        <p class="eyebrow">Natural Care. Lasting Beauty.</p>
+        <h2>Give Your Hair the<br />Care It Deserves</h2>
+      </div>
+
+      <a href="#" class="btn btn-light btn-sm">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+
+      <div class="cta__perk">
+        <i class="fa-solid fa-truck-fast"></i>
+        <p><strong>Free Shipping</strong><br />on orders above PKR 3000</p>
+      </div>
+      <div class="cta__perk">
+        <i class="fa-solid fa-shield-halved"></i>
+        <p><strong>Secure Payments</strong><br />100% safe &amp; reliable</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 8. FOOTER ========== -->
   <footer class="footer">
-    <a href="#home" class="logo logo--footer">
-      <span class="logo__name">Emblic</span>
-      <span class="logo__plus">plus</span>
-    </a>
-    <p>Thoughtful care for your everyday routine.</p>
-    <p>&copy; 2026 Emblic Plus. All rights reserved.</p>
+    <div class="container">
+      <div class="footer__top">
+        <a href="#home" class="logo">
+          <span class="logo__name">Emblic</span>
+          <span class="logo__plus">plus</span>
+        </a>
+
+        <nav class="footer__links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#ingredients">Ingredients</a>
+          <a href="#reviews">Reviews</a>
+        </nav>
+
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2025 Emblic Plus. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms &amp; Conditions</a></p>
+      </div>
+    </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

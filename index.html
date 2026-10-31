@@ -3,41 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Emblic Plus | Pure Hair Oil</title>
-
+  <title>Emblic Plus | Pure Amla Hair Oil</title>
+  <meta name="description" content="Emblic Plus Hair Oil — a pure blend of amla, bhringraj, coconut and sesame oils for stronger, healthier hair." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body data-page="home">
 
-  <!-- ========== 1. HEADER ========== -->
-  <header class="header">
-    <div class="container header__inner">
-      <a href="#home" class="logo">
-        <span class="logo__name">Emblic</span>
-        <span class="logo__plus">plus</span>
-      </a>
+  <div id="site-header"></div>
 
-      <nav class="nav" id="nav">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#benefits">Benefits</a>
-        <a href="#ingredients">Ingredients</a>
-        <a href="#reviews">Reviews</a>
-      </nav>
-
-      <div class="header__icons">
-        <button id="searchBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <button id="cartBtn" class="cart-btn" aria-label="Cart" data-count="0"><i class="fa-solid fa-bag-shopping"></i></button>
-        <button id="burgerBtn" class="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
-      </div>
-    </div>
-  </header>
-
-  <!-- ========== 2. HERO ========== -->
+  <!-- ========== HERO ========== -->
   <section class="hero" id="home">
     <div class="container hero__inner">
       <div class="hero__content">
@@ -47,27 +25,35 @@
           Emblic Plus Hair Oil is a pure blend of natural oils and extracts that nourish your scalp,
           strengthen roots and promote healthy, shiny hair.
         </p>
-
         <div class="hero__features">
           <div class="hero__feature"><span class="icon-circle"><i class="fa-solid fa-seedling"></i></span>Nourishes<br />Scalp</div>
-          <div class="hero__feature"><span class="icon-circle"><i class="fa-solid fa-droplet"></i></span>Strengthens<br />Hair</div>
-          <div class="hero__feature"><span class="icon-circle"><i class="fa-solid fa-leaf"></i></span>Promotes<br />Hair Growth</div>
+          <div class="hero__feature"><span class="icon-circle"><i class="fa-solid fa-fire-flame-simple"></i></span>Strengthens<br />Hair</div>
+          <div class="hero__feature"><span class="icon-circle"><i class="fa-solid fa-droplet"></i></span>Promotes<br />Hair Growth</div>
         </div>
-
-        <a href="#ingredients" class="btn">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="hero__ctas">
+          <a href="product.html?id=hair-oil-200" class="btn">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+          <span class="hero__price">from <strong>PKR 1,450</strong></span>
+        </div>
       </div>
-
-      <div class="badge"><i class="fa-solid fa-leaf"></i><span>100% Pure<br />&amp; Natural</span></div>
     </div>
+
+    <div class="badge" aria-label="100% pure and natural">
+      <svg viewBox="0 0 100 100" class="badge__ring">
+        <defs><path id="circ" d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0" /></defs>
+        <text><textPath href="#circ">100% PURE • &amp; NATURAL • 100% PURE • &amp; NATURAL •</textPath></text>
+      </svg>
+      <i class="fa-solid fa-leaf"></i>
+    </div>
+
+    <img src="images/hero.jpg" alt="Emblic Plus Hair Oil bottle with fresh amla and sesame seeds" class="hero__img" />
   </section>
 
-  <!-- ========== 3. ABOUT ========== -->
+  <!-- ========== ABOUT ========== -->
   <section class="about" id="about">
     <div class="container about__grid">
       <div class="about__img">
-        <img src="images/about-hair.jpg" alt="Woman with long healthy dark hair" />
+        <img src="images/about.jpg" alt="Emblic Plus Hair Oil beside fresh amla fruit" loading="lazy" />
       </div>
-
       <div class="about__content">
         <p class="eyebrow">About Emblic Plus</p>
         <h2 class="section-title">Pure Ingredients.<br />Real Results.</h2>
@@ -77,32 +63,21 @@
         </p>
         <a href="#benefits" class="btn btn-sm">Learn More <i class="fa-solid fa-arrow-right"></i></a>
       </div>
-
       <div class="about__points">
-        <div class="point">
-          <span class="icon-circle"><i class="fa-solid fa-leaf"></i></span>
-          <div><h4>100% Natural</h4><p>No harmful chemicals</p></div>
-        </div>
-        <div class="point">
-          <span class="icon-circle"><i class="fa-solid fa-droplet"></i></span>
-          <div><h4>Gentle on Scalp</h4><p>Safe for daily use</p></div>
-        </div>
-        <div class="point">
-          <span class="icon-circle"><i class="fa-solid fa-wind"></i></span>
-          <div><h4>Suitable for All Hair Types</h4><p>Straight, wavy or curly</p></div>
-        </div>
+        <div class="point"><span class="icon-circle"><i class="fa-solid fa-leaf"></i></span><div><h4>100% Natural</h4><p>No harmful chemicals</p></div></div>
+        <div class="point"><span class="icon-circle"><i class="fa-solid fa-droplet"></i></span><div><h4>Gentle on Scalp</h4><p>Safe for daily use</p></div></div>
+        <div class="point"><span class="icon-circle"><i class="fa-solid fa-wind"></i></span><div><h4>Suitable for All Hair Types</h4><p>Straight, wavy or curly</p></div></div>
       </div>
     </div>
   </section>
 
-  <!-- ========== 4. BENEFITS ========== -->
+  <!-- ========== BENEFITS ========== -->
   <section class="benefits" id="benefits">
     <div class="container benefits__inner">
       <div class="benefits__content">
         <p class="eyebrow">Key Benefits</p>
         <h2 class="section-title">Healthier Hair<br />from Root to Tip</h2>
         <p class="benefits__lead">Discover the natural power of Emblic Plus and experience stronger, shinier and healthier hair.</p>
-
         <div class="checklist">
           <span><i class="fa-solid fa-circle-check"></i>Reduces hair fall</span>
           <span><i class="fa-solid fa-circle-check"></i>Adds natural shine</span>
@@ -112,47 +87,71 @@
           <span><i class="fa-solid fa-circle-check"></i>Supports new hair growth</span>
         </div>
       </div>
-
-      <p class="benefits__note">Pure oils.<br />Pure care.</p>
+      <p class="benefits__note">Pure oils.<br />Pure care.
+        <svg viewBox="0 0 60 30" aria-hidden="true"><path d="M4 4 C 10 22, 30 26, 52 20" /><path d="M44 13 L52 20 L43 25" /></svg>
+      </p>
     </div>
   </section>
 
-  <!-- ========== 5. INGREDIENTS ========== -->
+  <!-- ========== SHOP (featured) ========== -->
+  <section class="featured" id="shop">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Shop Emblic Plus</p>
+          <h2 class="section-title">Choose Your Ritual</h2>
+        </div>
+        <a href="shop.html" class="link-arrow">View all products <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="grid-products" id="featured"></div>
+    </div>
+  </section>
+
+  <!-- ========== INGREDIENTS ========== -->
   <section class="ingredients" id="ingredients">
     <div class="container ingredients__grid">
       <div class="ingredients__intro">
         <p class="eyebrow">Natural Ingredients</p>
         <h2 class="section-title">The Power of Nature</h2>
         <p>A unique blend of traditional herbs and natural oils known for their hair health benefits.</p>
-        <a href="#" class="btn btn-sm">Explore Ingredients <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="product.html?id=hair-oil-200" class="btn btn-sm">Explore Ingredients <i class="fa-solid fa-arrow-right"></i></a>
       </div>
-
       <div class="ingredients__list">
         <article class="ingredient">
-          <img src="images/amla.jpg" alt="Amla" />
-          <h4>Amla Extract</h4>
-          <p>Rich in Vitamin C, boosts collagen &amp; strengthens hair.</p>
+          <span class="ingredient__img"><img src="images/ing-amla.jpg" alt="Fresh amla fruit" loading="lazy" /></span>
+          <h4>Amla Extract</h4><p>Rich in Vitamin C, boosts collagen &amp; strengthens hair.</p>
         </article>
         <article class="ingredient">
-          <img src="images/bhringraj.jpg" alt="Bhringraj" />
-          <h4>Bhringraj</h4>
-          <p>Stimulates hair growth &amp; reduces hair fall.</p>
+          <span class="ingredient__img ingredient__img--svg" style="background:#5f8a3e">
+            <svg viewBox="0 0 80 80" aria-label="Bhringraj flower">
+              <g fill="#3e6b2a"><ellipse cx="18" cy="56" rx="16" ry="6" transform="rotate(-30 18 56)"/><ellipse cx="62" cy="58" rx="16" ry="6" transform="rotate(25 62 58)"/><ellipse cx="22" cy="24" rx="14" ry="5" transform="rotate(35 22 24)"/><ellipse cx="60" cy="22" rx="14" ry="5" transform="rotate(-35 60 22)"/></g>
+              <g fill="#fffdf6">
+                <ellipse cx="40" cy="26" rx="4" ry="11"/><ellipse cx="40" cy="54" rx="4" ry="11"/><ellipse cx="26" cy="40" rx="11" ry="4"/><ellipse cx="54" cy="40" rx="11" ry="4"/>
+                <ellipse cx="30" cy="30" rx="4" ry="11" transform="rotate(-45 30 30)"/><ellipse cx="50" cy="50" rx="4" ry="11" transform="rotate(-45 50 50)"/><ellipse cx="50" cy="30" rx="4" ry="11" transform="rotate(45 50 30)"/><ellipse cx="30" cy="50" rx="4" ry="11" transform="rotate(45 30 50)"/>
+              </g>
+              <circle cx="40" cy="40" r="8" fill="#e7c55a"/><circle cx="40" cy="40" r="4" fill="#c89a2c"/>
+            </svg>
+          </span>
+          <h4>Bhringraj</h4><p>Stimulates hair growth &amp; reduces hair fall.</p>
         </article>
         <article class="ingredient">
-          <img src="images/coconut.jpg" alt="Coconut" />
-          <h4>Coconut Oil</h4>
-          <p>Deeply nourishes &amp; adds natural shine.</p>
+          <span class="ingredient__img ingredient__img--svg" style="background:#f3ece0">
+            <svg viewBox="0 0 80 80" aria-label="Coconut">
+              <circle cx="46" cy="34" r="22" fill="#6b4226"/><circle cx="40" cy="27" r="2" fill="#3d2414"/><circle cx="48" cy="24" r="2" fill="#3d2414"/><circle cx="45" cy="32" r="2" fill="#3d2414"/>
+              <path d="M8 46 a26 26 0 0 0 52 0 z" fill="#5a361d"/><path d="M12 46 a22 22 0 0 0 44 0 z" fill="#fffaf0"/><ellipse cx="34" cy="46" rx="26" ry="4" fill="#7a4a29"/><ellipse cx="34" cy="46" rx="22" ry="3" fill="#fdf7ea"/>
+            </svg>
+          </span>
+          <h4>Coconut Oil</h4><p>Deeply nourishes &amp; adds natural shine.</p>
         </article>
         <article class="ingredient">
-          <img src="images/sesame.jpg" alt="Sesame seeds" />
-          <h4>Sesame Oil</h4>
-          <p>Rich in nutrients, prevents breakage.</p>
+          <span class="ingredient__img"><img src="images/ing-sesame.jpg" alt="Bowl of seeds" loading="lazy" /></span>
+          <h4>Sesame Oil</h4><p>Rich in nutrients, prevents breakage.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ========== 6. REVIEWS ========== -->
+  <!-- ========== REVIEWS ========== -->
   <section class="reviews" id="reviews">
     <div class="container">
       <div class="reviews__head">
@@ -161,95 +160,77 @@
           <h2 class="section-title">Real People. Real Results.</h2>
         </div>
         <div class="reviews__arrows">
-          <button id="prevReview" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
-          <button id="nextReview" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+          <button id="prevReview" aria-label="Previous review"><i class="fa-solid fa-chevron-left"></i></button>
+          <button id="nextReview" aria-label="Next review"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
       </div>
-
       <div class="reviews__track">
         <article class="review">
-          <img src="images/user-1.jpg" alt="Ayesha Khan" class="review__avatar" />
+          <span class="review__avatar">AK</span>
           <div class="review__body">
             <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
             <p>"My hair fall has reduced a lot and my hair feels much stronger now. Highly recommend!"</p>
             <h5>Ayesha Khan</h5><span>Karachi</span>
           </div>
         </article>
-
         <article class="review">
-          <img src="images/user-2.jpg" alt="Sara Ahmed" class="review__avatar" />
+          <span class="review__avatar">SA</span>
           <div class="review__body">
             <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
             <p>"This oil has made my hair so much softer and shinier. I love the natural fragrance too!"</p>
             <h5>Sara Ahmed</h5><span>Lahore</span>
           </div>
         </article>
-
         <article class="review">
-          <img src="images/user-3.jpg" alt="Fatima Rizvi" class="review__avatar" />
+          <span class="review__avatar">FR</span>
           <div class="review__body">
             <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
             <p>"Finally a hair oil that actually works! My scalp feels healthier and my hair grows faster."</p>
             <h5>Fatima Rizvi</h5><span>Islamabad</span>
           </div>
         </article>
+        <article class="review">
+          <span class="review__avatar">HM</span>
+          <div class="review__body">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <p>"Bought the family pack for my mother and sisters. Lovely light texture, doesn't feel greasy."</p>
+            <h5>Hina Malik</h5><span>Faisalabad</span>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ========== 7. CTA BANNER ========== -->
+  <!-- ========== CTA ========== -->
   <section class="cta">
     <div class="container cta__inner">
       <div class="cta__text">
         <p class="eyebrow">Natural Care. Lasting Beauty.</p>
         <h2>Give Your Hair the<br />Care It Deserves</h2>
       </div>
-
-      <a href="#" class="btn btn-light btn-sm">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
-
-      <div class="cta__perk">
-        <i class="fa-solid fa-truck-fast"></i>
-        <p><strong>Free Shipping</strong><br />on orders above PKR 3000</p>
-      </div>
-      <div class="cta__perk">
-        <i class="fa-solid fa-shield-halved"></i>
-        <p><strong>Secure Payments</strong><br />100% safe &amp; reliable</p>
-      </div>
+      <a href="shop.html" class="btn btn-light btn-sm">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+      <div class="cta__perk"><i class="fa-solid fa-truck-fast"></i><p><strong>Free Shipping</strong><br />on orders above PKR 3000</p></div>
+      <div class="cta__perk"><i class="fa-solid fa-shield-halved"></i><p><strong>Secure Payments</strong><br />100% safe &amp; reliable</p></div>
     </div>
   </section>
 
-  <!-- ========== 8. FOOTER ========== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__top">
-        <a href="#home" class="logo">
-          <span class="logo__name">Emblic</span>
-          <span class="logo__plus">plus</span>
-        </a>
-
-        <nav class="footer__links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#benefits">Benefits</a>
-          <a href="#ingredients">Ingredients</a>
-          <a href="#reviews">Reviews</a>
-        </nav>
-
-        <div class="footer__social">
-          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
-        </div>
+  <!-- ========== NEWSLETTER ========== -->
+  <section class="newsletter">
+    <div class="container newsletter__inner">
+      <div>
+        <h3>Join the Emblic circle</h3>
+        <p class="muted small">Hair-care tips and early access to offers. Get 5% off your first order.</p>
       </div>
-
-      <div class="footer__bottom">
-        <p>© 2025 Emblic Plus. All rights reserved.</p>
-        <p><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms &amp; Conditions</a></p>
-      </div>
+      <form id="newsletter" class="newsletter__form">
+        <input type="email" required placeholder="Your email address" aria-label="Email address" />
+        <button class="btn btn-sm">Subscribe</button>
+      </form>
     </div>
-  </footer>
+  </section>
 
+  <div id="site-footer"></div>
+
+  <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -14,58 +14,11 @@
   <div id="site-header"></div>
 
   <section class="checkout">
-    <div class="container" id="checkoutWrap">
-      <nav class="crumbs"><a href="cart.html">Cart</a> / <span>Checkout</span></nav>
+    <div class="container">
       <h1 class="section-title">Checkout</h1>
-
-      <div class="cart-grid">
-        <form class="panel" id="checkoutForm" novalidate>
-          <h3>Contact</h3>
-          <div class="fields">
-            <label class="field"><span>First name</span><input name="firstName" required autocomplete="given-name" /><em>Please enter your first name</em></label>
-            <label class="field"><span>Last name</span><input name="lastName" required autocomplete="family-name" /><em>Please enter your last name</em></label>
-            <label class="field"><span>Phone</span><input name="phone" type="tel" required pattern="^(\+92|0)3[0-9]{2}-?[0-9]{7}$" placeholder="03XX-XXXXXXX" autocomplete="tel" /><em>Enter a valid mobile number, e.g. 0300-1234567</em></label>
-            <label class="field"><span>Email <small>(optional)</small></span><input name="email" type="email" autocomplete="email" /><em>Enter a valid email</em></label>
-          </div>
-
-          <h3>Delivery address</h3>
-          <div class="fields">
-            <label class="field field--full"><span>Address</span><input name="address" required autocomplete="street-address" placeholder="House, street, area" /><em>Please enter your address</em></label>
-            <label class="field"><span>City</span>
-              <select name="city" required>
-                <option value="">Select city</option>
-                <option>Karachi</option><option>Lahore</option><option>Islamabad</option><option>Rawalpindi</option>
-                <option>Faisalabad</option><option>Multan</option><option>Peshawar</option><option>Quetta</option>
-                <option>Sialkot</option><option>Hyderabad</option><option>Other</option>
-              </select><em>Please choose your city</em></label>
-            <label class="field"><span>Postal code <small>(optional)</small></span><input name="postal" inputmode="numeric" autocomplete="postal-code" /></label>
-            <label class="field field--full"><span>Order notes <small>(optional)</small></span><textarea name="notes" rows="2" placeholder="Landmark, delivery time…"></textarea></label>
-          </div>
-
-          <h3>Payment</h3>
-          <div class="pay">
-            <label class="pay__opt"><input type="radio" name="payment" value="cod" checked /><span><i class="fa-solid fa-money-bill-wave"></i> Cash on Delivery<small>Pay when your order arrives</small></span></label>
-            <label class="pay__opt"><input type="radio" name="payment" value="bank" /><span><i class="fa-solid fa-building-columns"></i> Bank Transfer / JazzCash / Easypaisa<small>Details shared after you place the order</small></span></label>
-          </div>
-          <p class="note" id="bankInfo" hidden><i class="fa-solid fa-circle-info"></i> We'll send account details by SMS. Your order ships once payment is confirmed.</p>
-
-          <button class="btn btn-block" type="submit">Place Order <i class="fa-solid fa-lock"></i></button>
-          <p class="muted small center">Demo store: no real payment is taken.</p>
-        </form>
-
-        <aside class="panel summary">
-          <h3>Order Summary</h3>
-          <div id="summaryItems"></div>
-          <form class="coupon" id="couponForm2">
-            <input name="code" placeholder="Discount code" />
-            <button class="btn btn-sm btn-outline">Apply</button>
-            <p class="coupon__msg"></p>
-          </form>
-          <div id="summaryRows"></div>
-        </aside>
-      </div>
+      <p class="muted">Online checkout is not available yet. Please contact us to place an order.</p>
+      <a class="btn" href="shop.html">Continue shopping</a>
     </div>
-    <div class="container" id="orderDone" hidden></div>
   </section>
 
   <div id="site-footer"></div>

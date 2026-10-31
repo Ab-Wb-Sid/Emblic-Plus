@@ -47,27 +47,6 @@ const PRODUCTS = [
       "Three bottles of Emblic Plus Hair Oil for the whole family. Our best price per bottle, and it qualifies for free shipping anywhere in Pakistan.",
     details: ["3 × 200ml bottles", "Free shipping included", "Suitable for all hair types", "Free from mineral oil & parabens"]
   },
-  {
-    id: "ritual-gift-set",
-    name: "Amla Ritual Gift Set",
-    size: "Oil + comb + wrap",
-    category: "gift",
-    price: 2250,
-    oldPrice: null,
-    rating: 4.7,
-    reviews: 38,
-    image: "images/p-gift.jpg",
-    tag: "New",
-    short: "Hair oil, neem-wood comb and cotton hair wrap in a gift box.",
-    description:
-      "Everything for a weekly oiling ritual: a 200ml bottle of Emblic Plus Hair Oil, a hand-finished neem-wood comb and a soft cotton hair wrap, packed in a kraft gift box with a handwritten note.",
-    details: ["200ml Emblic Plus Hair Oil", "Neem-wood comb", "Cotton hair wrap", "Gift box + note card"]
-  }
+  
 ];
 
-const SHOP = {
-  currency: "PKR",
-  freeShippingAt: 3000,
-  shippingFee: 250,
-  coupons: { EMBLIC10: 0.10, WELCOME5: 0.05 }
-};
